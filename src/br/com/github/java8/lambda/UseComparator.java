@@ -13,7 +13,9 @@ public class UseComparator {
         );
 
         Collections.sort(strings);
-        System.out.println(String.format("Case sensitive sort: %s", strings));
+        //System.out.println(String.format("Case sensitive sort: %s", strings));
+        System.out.println("Case sensitive sort:");
+        strings.forEach(System.out::println);
 
         /*Collections.sort(strings, new Comparator<String>() {
             @Override
@@ -25,6 +27,8 @@ public class UseComparator {
         /*Collections.sort(strings, (str1, str2) -> str1.compareToIgnoreCase(str2));*/
 
         Collections.sort(strings, String::compareToIgnoreCase);
-        System.out.println(String.format("Case insensitive sort: %s", strings));
+        //System.out.println(String.format("Case insensitive sort: %s", strings));
+        System.out.println("Case insensitive sort:");
+        strings.forEach(System.out::println);
     }
 }
