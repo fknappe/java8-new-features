@@ -1,8 +1,5 @@
 package br.com.github.java8.lambda;
 
-/**
- * Created by fknappe on 24/04/17.
- */
 public class UseRunnable {
 
     public static void main(String[] args) {
