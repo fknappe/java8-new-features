@@ -1,4 +1,4 @@
-package br.com.github.java8.lambda;
+package br.com.github.java8.lambda.interfaces;
 
 @FunctionalInterface
 public interface SimpleInterface {

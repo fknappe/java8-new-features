@@ -1,5 +1,7 @@
 package br.com.github.java8.lambda;
 
+import br.com.github.java8.lambda.interfaces.SimpleInterface;
+
 public class UseSimpleInterface {
 
 	public static void main(String[] args) {
