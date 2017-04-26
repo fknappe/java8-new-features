@@ -41,7 +41,7 @@ public class UsePredicate {
                                       Predicate<Person> predicate) {
         people.forEach(p -> {
             if (predicate.test(p)) {
-                System.out.println(p);
+                System.out.println(p.getPersonInfo());
             }
         });
     }

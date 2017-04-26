@@ -1,5 +1,6 @@
 package br.com.github.java8.methodreference;
 
+import br.com.github.java8.methodreference.interfaces.PersonInterface;
 import br.com.github.java8.pojo.Person;
 
 import java.util.Arrays;
@@ -16,7 +17,7 @@ public class UseStaticReference {
                 new Person("Peter Doe", 76)
         );
 
-        Collections.sort(people, Person::compareAges);
-        people.forEach(System.out::println);
+        Collections.sort(people, PersonInterface::compareAges);
+        people.forEach(person -> System.out.println(person.getPersonInfo()));
     }
 }

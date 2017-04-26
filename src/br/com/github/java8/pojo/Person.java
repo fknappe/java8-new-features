@@ -1,6 +1,8 @@
 package br.com.github.java8.pojo;
 
-public class Person {
+import br.com.github.java8.methodreference.interfaces.PersonInterface;
+
+public class Person implements PersonInterface {
 
     private String name;
 
@@ -17,15 +19,5 @@ public class Person {
 
     public Integer getAge() {
         return age;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("%s (%d)", getName(), getAge());
-    }
-
-    public static int compareAges(Person p1, Person p2)
-    {
-        return p1.getAge().compareTo(p2.getAge());
     }
 }
