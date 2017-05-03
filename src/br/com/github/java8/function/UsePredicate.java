@@ -33,16 +33,23 @@ public class UsePredicate {
             }
         }*/
 
+        System.out.println(">>>> Older People");
         displayPeople(people, predOlder);
+
+        System.out.println(">>>> Younger People");
         displayPeople(people, predYounger);
     }
 
     private static void displayPeople(List<Person> people,
                                       Predicate<Person> predicate) {
-        people.forEach(p -> {
+        /*people.forEach(p -> {
             if (predicate.test(p)) {
                 System.out.println(p.getPersonInfo());
             }
-        });
+        });*/
+
+        people.stream()
+                .filter(predicate)
+                .forEach(person -> System.out.println(person.getPersonInfo()));
     }
 }
